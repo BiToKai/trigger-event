@@ -10,5 +10,5 @@ jobs:
   display_after_message:
     runs-on: ubuntu-latest
     steps:
-      - name: Message de resussite du workflow de merge
+      - name: "Message de resussite du workflow de merge"
         run: echo "Le workflow de merge est terminé !"
