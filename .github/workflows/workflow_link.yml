@@ -1,0 +1,16 @@
+
+name: Workflow Liés
+on:
+  workflow_dispatch:
+jobs:
+  first_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Message du premier job
+        run: echo "Ceci est le message du premier job !"  
+  second_job:
+    runs-on: ubuntu-latest
+    needs: first_job
+    steps:
+      - name: Message du second job
+        run: echo "Ceci est le message dusecond job, lancé après le premier !"  
